@@ -1,0 +1,57 @@
+main {
+    color: var(--color-white);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    height: 190vh;
+}
+
+main h2 {
+    font-family: var(--ff-antonio);
+    font-size: 5.28rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+main p {text-align: justify; font-weight: 400;}
+
+.planet-review, .data-section {width: 1100px;}
+
+.planet-review img {max-width: 50%;}
+
+.text-section {
+    display: flex; 
+    flex-direction: column; 
+    gap: 40px;
+}
+
+.text-section div {width: 350px;}
+
+.text-section div p {line-height: 23px; padding-bottom: 20px;}
+
+.text-section span {color: var(--color-dark-grey); font-weight: 700;}
+
+.planet-review {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.planet-structure {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.data-section {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

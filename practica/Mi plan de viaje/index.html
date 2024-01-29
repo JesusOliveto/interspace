@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter Space</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Logo4m.png"><!--Logo en el navegador-->
+
+    <script src="js/menu.js" defer></script> <!--Aparece un menu en el deseño responsive-->
+    <script src="js/data.js" defer></script> <!--Trae la informacion de cada planeta-->
+    <script src="js/script.js" defer></script> <!--Es el diseño-->
+    <script src="js/main.js" defer></script> <!--Trae el clima de buenos aires-->
+
+    <!--Conexion a css-->
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/elements.css">
+    <link rel="stylesheet" href="css/generic.css">
+    <link rel="stylesheet" href="settings/global.css">
+    <link rel="stylesheet" href="settings/reset.css">
+    <link rel="stylesheet" href="settings/responsive.css">
+
+</head>
+<body>
+    <header>
+          <h1>Inter Space</h1>
+        <nav>
+            <button class="nav-button" id="0" onclick="pressButton(this.id)">Luna</button>
+            <button class="nav-button" id="1" onclick="pressButton(this.id)">Marte</button>
+            <button class="nav-button" id="2" onclick="pressButton(this.id)">Júpiter</button>
+            <button class="nav-button" id="3" onclick="pressButton(this.id)">Saturno</button>
+            <button class="nav-button" id="4" onclick="pressButton(this.id)">Urano</button>
+            <button class="nav-button" id="5" onclick="pressButton(this.id)">Neptuno</button>
+        </nav>
+        <button class="menu-button">
+            <div class="menu-toogle"></div>
+            <div class="menu-toogle"></div>
+            <div class="menu-toogle"></div>
+        </button>
+    </header>
+    <main>
+        <div class="planet-review">
+                <img src="" alt="">
+        <article class="text-section">
+            <div>
+                <h2></h2>
+                <p></p>
+                <span>Fuente: <a href="" target="_blank"> Wikipedia</a></span>
+            </div>
+            <div class="planet-structure">
+                <button class="planet-structure-button"><span>01</span>Vision general</button>
+                <button class="planet-structure-button"><span>02</span>Estructura interna</button>
+                <button class="planet-structure-button"><span>03</span>Superfície geológica</button>
+            </div>
+        </article>
+        </div>
+        <article class="data-section">
+            <div>
+                <span>Tiempo de rotación</span>
+                <h1></h1>
+            </div>
+            <div>
+                <span>Tiempo de translación</span>
+                <h1></h1>
+            </div>
+            <div>
+                <span>Radio</span>
+                <h1></h1>
+            </div>
+            <div>
+                <span>Temperatura destino</span>
+                <h1></h1>
+            </div>
+            <div>
+                <span>Temperatura origen</span>
+                <div class="contenedor__resultado" id="contenedor__datos" >
+                </div>
+                <form id="formulario">
+                  <label for="ciudad" hidden>Ciudad:</label>
+                  <input type="text" id="ciudad" name="ciudad" value="Buenos Aires" style="display: none;" required>
+                
+                  <label for="pais" hidden>País:</label>
+                  <input type="text" id="pais" name="pais" value="Argentina" style="display: none;" required>
+                </form>
+                   
+            </div>
+              
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@media screen and (max-width: 1130px) {
+    header {height: 15vh; flex-direction: column;}
+
+    header h1 {padding-top: 15px; margin-left: 0;}
+
+    nav {
+        height: 50%;
+        width: 100%; 
+        justify-content: space-evenly;
+        margin-right: 0;
+    }
+
+    .nav-button:nth-child(1):hover {border-bottom: 4px solid var(--color-mercury);}
+    .nav-button:nth-child(2):hover {border-bottom: 4px solid var(--color-venus);}
+    .nav-button:nth-child(3):hover {border-bottom: 4px solid var(--color-earth);}
+    .nav-button:nth-child(4):hover {border-bottom: 4px solid var(--color-mars);}
+    .nav-button:nth-child(5):hover {border-bottom: 4px solid var(--color-jupiter);}
+    .nav-button:nth-child(6):hover {border-bottom: 4px solid var(--color-saturn);}
+    .nav-button:nth-child(7):hover {border-bottom: 4px solid var(--color-uranus);}
+    .nav-button:nth-child(8):hover {border-bottom: 4px solid var(--color-neptune);}
+
+    .planet-review, .data-section {width: 90%;}
+
+    .planet-review {flex-direction: column;}
+
+    .planet-review img {max-width: 40%;}
+
+    .text-section {flex-direction: row; width: 100%; justify-content: space-around;}
+
+    .planet-structure {justify-content: flex-end;}
+
+}
+
+@media screen and (max-width: 930px) {
+
+    .data-section span {font-size: 0.6rem;}
+    .data-section h1 {font-size: 2rem;}
+    
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 10vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {margin-left: 40px; padding-top: 0;}
+
+    .menu-button {display: inherit; margin-right: 40px;}
+
+    nav {
+        background-color: var(--color-black);
+        top: 10vh;
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        gap: 0;
+        justify-content: flex-start;
+        align-items: center;
+        height: calc(100vh - 10vh);
+    }
+
+    .nav-button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid var(--button-hover);
+        font-size: 1rem;
+        height: 64px;
+        width: 90%;
+    }
+
+    main {height: 1350px;}
+
+    main h2 {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .text-section {flex-direction: column;}
+
+    .text-section div {width: 100%;}
+
+    .planet-structure {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        width: 100%;
+    }
+
+    .planet-structure span {display: none;}
+
+    .planet-structure-button {
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid var(--color-dark-grey);
+        border-radius: 10px;
+    }
+
+    .planet-structure-button:hover {border-bottom: 4px solid var();}
+
+    .data-section {flex-direction: column;}
+
+    .data-section div {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .data-section div span {font-size: 0.8rem;}
+
+    .data-section div h1 {margin-right: 20px;}
+
+}
+
+@media screen and (max-width: 400px) {
+    main h2 {font-size: 3.8rem;}
+    .planet-structure-button {font-size: 0.7rem;}
+    .data-section div h1 {font-size: 1.7rem;}
+}

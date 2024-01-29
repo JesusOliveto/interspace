@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="registro.css" rel="stylesheet" type="text/css"><!--Conexion con css-->
+    <link rel="icon" type="image/png" href="Imagenes\logo4m.png">
+</head>
+<body><!--Registro de personas-->
+    <div class="formulario">
+        <h1>Registro</h1>
+        <form method="post" action="registro.php"><!-- conexion con php -->
+            <div class="correo">
+                <input type="text" name="correo" id="correo" required><!-- Asigna el nombre "correo" -->
+                <label>Correo electrónico</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="nombre" id="nombre" required><!-- Asigna el nombre "nombre" -->
+                <label>Nombre</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="apellido" id="apellido" required><!-- Asigna el nombre "apellido" -->
+                <label>Apellido</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="dni" id="dni" required><!-- Asigna el nombre "dni" -->
+                <label>Dni</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="edad" id="edad" required><!-- Asigna el nombre "edad" -->
+                <label>Edad</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="codpostal" id="codpostal" required><!-- Asigna el nombre "codpostal" -->
+                <label>Codpostal</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="localidad" id="localidad" required><!-- Asigna el nombre "localidad" -->
+                <label>Localidad</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="numtel" id="numtel" required><!-- Asigna el nombre "numtel" -->
+                <label>Numero de telefono</label>
+            </div>
+            <div class="contrasena">
+                <input type="password" name="contrasena" id="contrasena" required><!-- Asigna el nombre "contrasena" -->
+                <label>Contraseña</label>
+            </div>
+            <div class="genero">
+                <label for="genero">Género:</label>
+                <select name="genero" id="genero" required>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                </select>
+            </div>
+            <div class="permisos">
+                <label name="permisos" id="permisos" value="0"></label>
+            </div>
+            <input type="submit" value="Registrarse">
+        </form><!-- conexion con php -->
+    </div>
+    
+</body>
+</html>
